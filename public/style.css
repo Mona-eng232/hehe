@@ -3575,6 +3575,14 @@ grammarly-extension {
 #first_message_div {
     display: flex;
     align-items: center;
+    padding-left: 5px;
+}
+
+#spoiler_free_desc {
+    background-color: var(--black30a);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 #creators_notes_div {
