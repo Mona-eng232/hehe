@@ -5500,7 +5500,7 @@ export async function moveWorldInfoEntry(sourceName, targetName, uid, { deleteOr
         await saveWorldInfo(sourceName, sourceData, true);
         console.debug(`[WI Move] Saved source lorebook '${sourceName}'.`);
 
-        console.log(`[WI Move] ${entryToMove.comment} moved successfully to '${targetName}'.`);
+        console.log(`[WI Move] ${entryToMove.comment} ${deleteOriginal ? 'moved' : 'copied'} successfully to '${targetName}'.`);
 
         // Check if the currently viewed book in the editor is the source or target and reload it
         const currentEditorBookIndex = Number($('#world_editor_select').val());
